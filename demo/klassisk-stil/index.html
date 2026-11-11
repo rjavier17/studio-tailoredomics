@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#11110f">
+  <title>Klassisk Stil Barber Shop | Konseptutkast</title>
+  <meta name="description" content="Konseptutkast for Klassisk Stil Barber Shop i Bergen.">
+  <style>
+    :root{
+      --ink:#11110f;
+      --ink-2:#1b1a17;
+      --paper:#f1eadc;
+      --paper-2:#e4d6bf;
+      --brass:#c99b55;
+      --red:#8f2924;
+      --muted:#746d62;
+      --line:rgba(17,17,15,.15);
+      --shadow:0 28px 80px rgba(0,0,0,.20);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    button,a{tap-highlight-color:transparent}
+    .concept{background:var(--red);color:#fff;text-align:center;padding:8px 18px;font-size:12px;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(17,17,15,.94);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav-inner{max-width:1180px;margin:auto;height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 28px}
+    .brand{display:flex;align-items:center;gap:13px;min-width:0}
+    .mark{width:44px;height:44px;border:1px solid rgba(201,155,85,.6);display:grid;place-items:center;transform:rotate(45deg);flex:none}
+    .mark span{transform:rotate(-45deg);font-family:Georgia,serif;font-size:18px;color:var(--brass);letter-spacing:-.06em}
+    .brand-copy{line-height:1.08}
+    .brand-copy strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:18px;letter-spacing:.04em;font-weight:600}
+    .brand-copy small{font-size:9px;text-transform:uppercase;letter-spacing:.24em;color:#bfb8ad}
+    .nav-links{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:650}
+    .nav-links a:not(.btn){color:#e9e3d8}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;padding:13px 18px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.11em;transition:.2s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--brass);color:var(--ink)}
+    .btn-outline{border-color:rgba(255,255,255,.35);color:#fff;background:rgba(0,0,0,.15)}
+    .hero{min-height:710px;display:grid;grid-template-columns:1.08fr .92fr;background:var(--ink);color:#fff;overflow:hidden}
+    .hero-copy{padding:95px max(34px,calc((100vw - 1180px)/2)) 84px max(28px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center;position:relative}
+    .hero-copy:after{content:"";position:absolute;right:-1px;top:0;height:100%;width:1px;background:rgba(255,255,255,.08)}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--brass);font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.2em;margin-bottom:22px}
+    .eyebrow:before{content:"";width:40px;height:1px;background:var(--brass)}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(54px,7vw,98px);font-weight:500;line-height:.9;letter-spacing:-.055em;margin:0 0 28px;max-width:700px}
+    .hero p{font-size:18px;line-height:1.75;color:#d6d0c5;max-width:610px;margin:0 0 34px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px}
+    .rating-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+    .stars{color:var(--brass);letter-spacing:.12em;font-size:17px}
+    .rating-text strong{font-size:15px}.rating-text span{display:block;color:#aaa297;font-size:12px;margin-top:2px}
+    .hero-art{position:relative;min-height:560px;background:
+      linear-gradient(135deg,rgba(17,17,15,.08),rgba(17,17,15,.74)),
+      url('https://images.unsplash.com/photo-1781455793310-8427c96454c7?auto=format&fit=crop&fm=jpg&q=82&w=1600') center/cover no-repeat,
+      linear-gradient(135deg,#5b4a36,#171512 75%);
+      isolation:isolate}
+    .hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(17,17,15,.6),transparent 45%);z-index:-1}
+    .hero-badge{position:absolute;right:34px;bottom:34px;width:132px;height:132px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(15,14,12,.72);backdrop-filter:blur(8px);display:grid;place-items:center;text-align:center;padding:15px;box-shadow:var(--shadow)}
+    .hero-badge strong{display:block;font-family:Georgia,serif;color:var(--brass);font-size:26px;line-height:1}.hero-badge span{display:block;margin-top:7px;font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:#eee}
+    .strip{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line);background:#e8ddca}
+    .strip > div{padding:23px 28px;text-align:center;border-right:1px solid var(--line)}.strip > div:last-child{border-right:0}
+    .strip strong{display:block;font-family:Georgia,serif;font-size:20px;font-weight:600}.strip span{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+    section{padding:96px 28px}
+    .wrap{max-width:1180px;margin:auto}
+    .section-head{display:grid;grid-template-columns:.7fr 1.3fr;gap:50px;align-items:end;margin-bottom:50px}
+    .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--red);font-weight:850}
+    h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(38px,5vw,64px);font-weight:500;line-height:1.02;letter-spacing:-.04em;margin:12px 0 0}
+    .section-head p{font-size:16px;color:var(--muted);max-width:570px;margin:0 0 4px;line-height:1.75}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service{border:1px solid var(--line);padding:38px 30px;background:rgba(255,255,255,.25);min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s ease}
+    .service:hover{transform:translateY(-4px);background:#f6efe3;box-shadow:0 18px 50px rgba(50,40,25,.08)}
+    .service-num{font-family:Georgia,serif;font-size:14px;color:var(--red)}
+    .service h3{font-family:Georgia,serif;font-size:30px;font-weight:500;margin:44px 0 12px}.service p{color:var(--muted);margin:0;font-size:14px}
+    .about{background:var(--ink-2);color:#fff;padding:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;min-height:590px}
+    .about-photo{background:
+      linear-gradient(0deg,rgba(0,0,0,.20),rgba(0,0,0,.10)),
+      url('https://images.unsplash.com/photo-1759134248487-e8baaf31e33e?auto=format&fit=crop&fm=jpg&q=82&w=1400') center/cover no-repeat,
+      linear-gradient(135deg,#5b4a36,#161412 70%);min-height:500px}
+    .about-copy{padding:86px max(32px,calc((100vw - 1180px)/2)) 80px 72px;display:flex;justify-content:center;flex-direction:column}
+    .about-copy .kicker{color:var(--brass)}.about-copy h2{max-width:500px}.about-copy p{color:#c8c1b6;max-width:530px;line-height:1.8;font-size:15px}
+    .proof{margin-top:32px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.proof div{border-top:1px solid rgba(255,255,255,.16);padding-top:17px}.proof strong{display:block;font-family:Georgia,serif;color:var(--brass);font-size:23px}.proof span{font-size:11px;color:#aaa297;text-transform:uppercase;letter-spacing:.1em}
+    .reviews{background:#f7f0e5}
+    .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .review{border:1px solid var(--line);padding:30px;background:#fff;display:flex;flex-direction:column;min-height:255px}.review .stars{font-size:13px}.review blockquote{font-family:Georgia,serif;font-size:20px;line-height:1.5;margin:24px 0;flex:1}.review small{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.1em}
+    .visit{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+    .visit h2{margin-bottom:26px}.visit p{color:var(--muted)}
+    .details{margin-top:34px;border-top:1px solid var(--line)}
+    .detail{display:grid;grid-template-columns:140px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font-size:14px}.detail strong{font-size:11px;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}
+    .hours{border:1px solid var(--line);background:#efe3d0;padding:34px}
+    .hours h3{font-family:Georgia,serif;font-size:29px;margin:0 0 20px;font-weight:500}.hours-row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}.hours-row:last-of-type{border-bottom:0}.hours-note{font-size:11px;color:var(--muted);margin-top:18px;line-height:1.6}
+    .cta{background:var(--red);color:#fff;padding:72px 28px}.cta-inner{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:34px}.cta h2{margin:0;max-width:720px}.cta .btn-primary{background:#fff;color:var(--ink);flex:none}
+    footer{background:#0b0b0a;color:#ddd6cb;padding:44px 28px 32px}.footer-inner{max-width:1180px;margin:auto}.footer-top{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1)}.footer-links{display:flex;gap:20px;font-size:12px}.disclaimer{margin-top:22px;font-size:10px;color:#857e74;max-width:850px;line-height:1.65}
+    .mobile-call{display:none;position:fixed;z-index:30;left:14px;right:14px;bottom:14px;background:var(--brass);color:var(--ink);padding:15px 20px;text-align:center;font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.11em;box-shadow:0 16px 40px rgba(0,0,0,.28)}
+    @media(max-width:900px){
+      .nav-inner{height:68px;padding:0 18px}.nav-links a:not(.btn){display:none}.nav-links{gap:0}.nav-links .btn{padding:11px 13px}.brand-copy strong{font-size:16px}.brand-copy small{display:none}.mark{width:38px;height:38px}
+      .hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:72px 24px 62px}.hero-art{min-height:430px;order:-1}.hero-badge{width:112px;height:112px;right:20px;bottom:20px}.hero-badge strong{font-size:23px}
+      .strip{grid-template-columns:1fr}.strip>div{border-right:0;border-bottom:1px solid var(--line)}.strip>div:last-child{border-bottom:0}
+      section{padding:72px 22px}.section-head{grid-template-columns:1fr;gap:24px}.services,.review-grid{grid-template-columns:1fr}.service{min-height:210px}.about-grid{grid-template-columns:1fr}.about-photo{min-height:400px}.about-copy{padding:68px 24px}.visit{grid-template-columns:1fr;gap:38px}.cta-inner{align-items:flex-start;flex-direction:column}.footer-top{align-items:flex-start;flex-direction:column}.mobile-call{display:block}body{padding-bottom:74px}
+    }
+    @media(max-width:520px){h1{font-size:54px}.hero p{font-size:16px}.hero-art{min-height:340px}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}.services{gap:10px}.about-photo{min-height:330px}.proof{grid-template-columns:1fr}.detail{grid-template-columns:105px 1fr}.cta{padding:58px 22px}.footer-links{flex-wrap:wrap}.nav-links .btn{font-size:10px}}
+  </style>
+</head>
+<body>
+  <div class="concept">Konseptutkast · Ikke offisiell nettside</div>
+
+  <nav class="nav" aria-label="Hovedmeny">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Klassisk Stil Barber Shop">
+        <div class="mark"><span>KS</span></div>
+        <div class="brand-copy"><strong>Klassisk Stil</strong><small>Barber Shop · Bergen</small></div>
+      </a>
+      <div class="nav-links">
+        <a href="#tjenester">Tjenester</a><a href="#om">Om</a><a href="#besok">Besøk oss</a>
+        <a class="btn btn-primary" href="tel:+4794119796">Ring salongen</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Barber i Bergen sentrum</div>
+        <h1>Presis klipp.<br>Klassisk stil.</h1>
+        <p>Herreklipp og skjeggpleie i Kong Oscars gate. Et lokalt barbersted med svært gode kundeomtaler og fokus på godt håndverk.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+4794119796">Ring 94 11 97 96</a>
+          <a class="btn btn-outline" href="#besok">Finn veien</a>
+        </div>
+        <div class="rating-row">
+          <div class="stars" aria-label="4.9 av 5 stjerner">★★★★★</div>
+          <div class="rating-text"><strong>4,9 / 5</strong><span>130 Google-anmeldelser</span></div>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Stemningsbilde fra en klassisk barbersalong">
+        <div class="hero-badge"><div><strong>4,9</strong><span>lokal favoritt<br>i Bergen</span></div></div>
+      </div>
+    </header>
+
+    <div class="strip" aria-label="Nøkkelinformasjon">
+      <div><strong>Kong Oscars gate 45</strong><span>5017 Bergen</span></div>
+      <div><strong>94 11 97 96</strong><span>Ring for informasjon</span></div>
+      <div><strong>Mandag–lørdag</strong><span>Se åpningstider nedenfor</span></div>
+    </div>
+
+    <section id="tjenester">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Tjenester</div><h2>Klassisk håndverk, uten unødvendig styr.</h2></div>
+          <p>En enkel barberopplevelse med fokus på det viktigste: presisjon, godt resultat og personlig service. Ta kontakt med salongen for oppdaterte priser og detaljer.</p>
+        </div>
+        <div class="services">
+          <article class="service"><div class="service-num">01</div><div><h3>Herreklipp</h3><p>Klassisk eller moderne klipp, tilpasset stil og hårtype.</p></div></article>
+          <article class="service"><div class="service-num">02</div><div><h3>Skjeggtrim</h3><p>Form, linjer og finish for et ryddig og gjennomført uttrykk.</p></div></article>
+          <article class="service"><div class="service-num">03</div><div><h3>Barbering & finish</h3><p>Detaljarbeid og klassisk barberpleie for et presist sluttresultat.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="om">
+      <div class="about-grid">
+        <div class="about-photo" role="img" aria-label="Barber som arbeider med skjeggtrim"></div>
+        <div class="about-copy">
+          <div class="kicker">Klassisk Stil</div>
+          <h2>Et barbersted kundene kommer tilbake til.</h2>
+          <p>Offentlige kundeomtaler trekker særlig frem nøyaktig klipp, hyggelig service, gode priser og en barber som forstår hva kunden ønsker. Flere omtaler beskriver mange år som faste kunder.</p>
+          <div class="proof">
+            <div><strong>4,9 / 5</strong><span>Google-vurdering</span></div>
+            <div><strong>130</strong><span>Google-anmeldelser</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" aria-labelledby="omtaler-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Kundeomtaler</div><h2 id="omtaler-title">Et godt rykte fortjener en god nettside.</h2></div>
+          <p>Et lite utvalg av temaene som går igjen i offentlige omtaler. Den ferdige siden kan kobles til kundens foretrukne anmeldelseskilde.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review"><div class="stars">★★★★★</div><blockquote>«Veldig dyktig frisør og veldig hyggelig service.»</blockquote><small>Offentlig kundeomtale · Google</small></article>
+          <article class="review"><div class="stars">★★★★★</div><blockquote>«Flink, grundig og hyggelig.»</blockquote><small>Offentlig kundeomtale · Google</small></article>
+          <article class="review"><div class="stars">★★★★★</div><blockquote>«Leverer alltid veldig bra resultater.»</blockquote><small>Offentlig kundeomtale · Google</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="besok">
+      <div class="wrap visit">
+        <div>
+          <div class="kicker">Besøk oss</div>
+          <h2>Midt i Bergen.</h2>
+          <p>Klassisk Stil Barber Shop ligger i Kong Oscars gate, kort vei fra sentrum.</p>
+          <div class="details">
+            <div class="detail"><strong>Adresse</strong><span>Kong Oscars gate 45<br>5017 Bergen</span></div>
+            <div class="detail"><strong>Telefon</strong><span><a href="tel:+4794119796">94 11 97 96</a></span></div>
+            <div class="detail"><strong>Veibeskrivelse</strong><span><a href="https://www.google.com/maps/search/?api=1&query=Klassisk+Stil+Barber+Shop+Kong+Oscars+gate+45+Bergen" target="_blank" rel="noopener">Åpne i Google Maps ↗</a></span></div>
+          </div>
+        </div>
+        <aside class="hours">
+          <h3>Åpningstider</h3>
+          <div class="hours-row"><span>Mandag</span><strong>10:00–18:00</strong></div>
+          <div class="hours-row"><span>Tirsdag</span><strong>10:00–18:00</strong></div>
+          <div class="hours-row"><span>Onsdag</span><strong>10:00–18:00</strong></div>
+          <div class="hours-row"><span>Torsdag</span><strong>10:00–19:00</strong></div>
+          <div class="hours-row"><span>Fredag</span><strong>10:00–18:00</strong></div>
+          <div class="hours-row"><span>Lørdag</span><strong>10:00–17:00</strong></div>
+          <div class="hours-row"><span>Søndag</span><strong>Stengt</strong></div>
+          <p class="hours-note">Åpningstidene er hentet fra offentlige bedriftsoppføringer og må bekreftes av salongen før publisering.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner">
+        <h2>Klar for en ny klipp?</h2>
+        <a class="btn btn-primary" href="tel:+4794119796">Ring 94 11 97 96</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a class="brand" href="#top"><div class="mark"><span>KS</span></div><div class="brand-copy"><strong>Klassisk Stil</strong><small>Barber Shop · Bergen</small></div></a>
+        <div class="footer-links"><a href="#tjenester">Tjenester</a><a href="#besok">Kontakt</a><a href="tel:+4794119796">94 11 97 96</a></div>
+      </div>
+      <p class="disclaimer">KONSEPTUTKAST — Dette er ikke den offisielle nettsiden til Klassisk Stil Barber Shop. Demoen er laget som et uforpliktende designforslag basert på offentlig tilgjengelig bedriftsinformasjon. Tekster, tjenester, åpningstider, bilder og øvrige opplysninger må godkjennes av virksomheten før eventuell publisering. Stemningsbilder: Unsplash.</p>
+    </div>
+  </footer>
+
+  <a class="mobile-call" href="tel:+4794119796">Ring salongen · 94 11 97 96</a>
+</body>
+</html>
