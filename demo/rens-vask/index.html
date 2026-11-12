@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#0f4f5f">
+  <title>Rens & Vask Bergen | Konseptutkast</title>
+  <meta name="description" content="Konseptutkast for Rens & Vask AS i Bergen.">
+  <style>
+    :root{
+      --deep:#0f4f5f;
+      --deep2:#0b3c48;
+      --foam:#eef7f6;
+      --paper:#fbfaf7;
+      --accent:#f0c85a;
+      --ink:#182126;
+      --muted:#6d777b;
+      --line:rgba(24,33,38,.14);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    a{text-decoration:none;color:inherit}
+    .concept{background:var(--accent);color:#122227;text-align:center;padding:7px 18px;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+    .nav{position:sticky;top:0;z-index:30;background:rgba(15,79,95,.97);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+    .navin{max-width:1180px;margin:auto;height:76px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:14px}.logo{width:44px;height:44px;border-radius:50%;border:1px solid rgba(240,200,90,.8);display:grid;place-items:center;color:var(--accent);font-weight:900;font-size:12px}.bc strong{display:block;font-size:18px}.bc small{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#c8d5d7}
+    .links{display:flex;align-items:center;gap:26px;font-size:12px;font-weight:800}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border:1px solid transparent;font-size:11px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}.btn-accent{background:var(--accent);color:#122227}.btn-outline{border-color:rgba(255,255,255,.3);color:white}
+    .hero{display:grid;grid-template-columns:1.03fr .97fr;min-height:700px;background:var(--deep2);color:#fff}.copy{padding:82px max(28px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center}.eyebrow{color:var(--accent);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.22em;margin-bottom:20px}
+    h1{font-size:clamp(58px,7.7vw,105px);line-height:.86;letter-spacing:-.065em;margin:0 0 26px;font-weight:950;max-width:720px}.copy p{color:#c8d5d7;font-size:17px;line-height:1.72;max-width:560px;margin:0 0 32px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:42px}.rating{display:flex;align-items:center;gap:16px}.stars{color:var(--accent);letter-spacing:.1em}.rating strong{display:block}.rating span{display:block;color:#9ab0b4;font-size:11px}
+    .photo{position:relative;background:linear-gradient(to top,rgba(4,31,37,.48),rgba(4,31,37,.02) 58%),url('https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&fm=jpg&q=82&w=1600') center/cover no-repeat;min-height:520px}.photo:after{content:"";position:absolute;inset:22px;border:1px solid rgba(255,255,255,.16)}.tag{position:absolute;right:34px;bottom:34px;z-index:2;background:var(--accent);color:#14262b;padding:18px 21px;font-weight:950;text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+    .strip{display:grid;grid-template-columns:repeat(3,1fr);background:var(--foam)}.strip>div{padding:24px 28px;text-align:center;border-right:1px solid var(--line)}.strip>div:last-child{border-right:0}.strip strong{display:block;font-size:19px;font-weight:900}.strip span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.13em}
+    section{padding:92px 28px}.wrap{max-width:1180px;margin:auto}.head{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:end;margin-bottom:48px}.k{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.2em;color:var(--deep)}h2{font-size:clamp(42px,5.4vw,70px);line-height:.94;letter-spacing:-.05em;margin:10px 0 0;font-weight:950}.head p{margin:0;color:var(--muted);max-width:580px;font-size:16px;line-height:1.75}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{background:#fff;border:1px solid var(--line);padding:32px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}.service .num{font-size:11px;color:var(--deep);font-weight:900}.service h3{font-size:30px;letter-spacing:-.035em;margin:48px 0 12px}.service p{font-size:14px;color:var(--muted);margin:0}
+    .statement{background:var(--accent);padding:70px 28px}.statement .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.statement h2{margin:0;color:#15252a}.statement p{font-size:17px;line-height:1.72;color:#26373b;margin:0}
+    .dark{background:var(--deep);color:#fff;padding:0}.grid{display:grid;grid-template-columns:1fr 1fr;min-height:590px}.work{background:linear-gradient(0deg,rgba(0,0,0,.22),rgba(0,0,0,.02)),url('https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&fm=jpg&q=82&w=1600') center/cover no-repeat;min-height:500px}.darkcopy{padding:80px 70px;display:flex;flex-direction:column;justify-content:center}.darkcopy .k{color:var(--accent)}.darkcopy p{color:#c5d3d5;max-width:520px}.proof{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}.proof div{border-top:1px solid rgba(255,255,255,.14);padding-top:17px}.proof strong{display:block;color:var(--accent);font-size:26px}.proof span{font-size:10px;color:#aac0c4;text-transform:uppercase;letter-spacing:.12em}
+    .visit{display:grid;grid-template-columns:1fr 1fr;gap:70px}.details{margin-top:30px;border-top:1px solid var(--line)}.detail{display:grid;grid-template-columns:145px 1fr;gap:20px;padding:17px 0;border-bottom:1px solid var(--line);font-size:14px}.detail strong{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.13em}
+    .hours{background:var(--foam);padding:34px;border:1px solid var(--line)}.hours h3{font-size:29px;margin:0 0 19px}.row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.note{font-size:11px;color:var(--muted);margin-top:18px}
+    .cta{background:var(--deep2);color:#fff;padding:66px 28px}.ctain{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:30px}.ctain h2{margin:0;max-width:760px}
+    footer{background:#082c35;color:#d6e0e2;padding:42px 28px}.foot{max-width:1180px;margin:auto}.disc{font-size:10px;line-height:1.65;color:#82999e;margin-top:20px}
+    @media(max-width:900px){.links>a:not(.btn){display:none}.hero,.head,.grid,.visit,.statement .wrap{grid-template-columns:1fr}.photo{order:-1;min-height:430px}.copy{padding:66px 24px}.strip{grid-template-columns:1fr}.strip>div{border-right:0;border-bottom:1px solid var(--line)}.services{grid-template-columns:1fr}.darkcopy{padding:64px 24px}.ctain{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="concept">Konseptutkast · Ikke offisiell nettside</div>
+
+  <nav class="nav">
+    <div class="navin">
+      <a class="brand" href="#top"><div class="logo">R&V</div><div class="bc"><strong>Rens & Vask</strong><small>Vaskeri & renseri · Bergen</small></div></a>
+      <div class="links"><a href="#tjenester">Tjenester</a><a href="#om">Om oss</a><a href="#besok">Besøk oss</a><a class="btn btn-accent" href="tel:+4755298320">Ring oss</a></div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="copy">
+        <div class="eyebrow">Vaskeri & renseri på Danmarksplass</div>
+        <h1>Rent.<br>Enkelt.<br>Lokalt.</h1>
+        <p>Vaskeri og renseritjenester i Fjøsangerveien. Et etablert lokalt tilbud for både hverdagsvask og profesjonell tekstilrens.</p>
+        <div class="actions"><a class="btn btn-accent" href="tel:+4755298320">Ring 55 29 83 20</a><a class="btn btn-outline" href="#besok">Finn oss</a></div>
+        <div class="rating"><div class="stars">★★★★★</div><div><strong>4,5 / 5</strong><span>134 Google-anmeldelser</span></div></div>
+      </div>
+      <div class="photo" role="img" aria-label="Stemningsbilde fra vaskeri"><div class="tag">Fjøsangerveien 32A<br>Bergen</div></div>
+    </header>
+
+    <div class="strip">
+      <div><strong>Fjøsangerveien 32A</strong><span>5053 Bergen</span></div>
+      <div><strong>55 29 83 20</strong><span>Ring for informasjon</span></div>
+      <div><strong>Vaskeri & renseri</strong><span>Lokalt tilbud</span></div>
+    </div>
+
+    <section id="tjenester"><div class="wrap">
+      <div class="head"><div><div class="k">Tjenester</div><h2>Praktisk hjelp med tøyet.</h2></div><p>Rens & Vask tilbyr vaskeri- og renseritjenester fra lokalet på Danmarksplass. Ta kontakt for informasjon om hva som kan behandles, priser og leveringstid.</p></div>
+      <div class="services">
+        <article class="service"><div class="num">01</div><div><h3>Vaskeri</h3><p>Praktiske vaskeritjenester for klær og tekstiler i hverdagen.</p></div></article>
+        <article class="service"><div class="num">02</div><div><h3>Renseri</h3><p>Profesjonell rens for tekstiler som trenger annen behandling enn vanlig vask.</p></div></article>
+        <article class="service"><div class="num">03</div><div><h3>Lokalt & enkelt</h3><p>Sentralt på Danmarksplass med enkel kontakt og fysisk innlevering.</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="statement"><div class="wrap"><h2>Alt det viktigste.<br>På ett sted.</h2><p>En enkel nettside gjør det lettere å finne åpningstider, adresse, kontaktinformasjon og tjenester uten å lete gjennom kataloger og sosiale medier.</p></div></section>
+
+    <section class="dark" id="om"><div class="grid"><div class="work"></div><div class="darkcopy"><div class="k">Rens & Vask</div><h2>Et etablert tilbud i Bergen.</h2><p>Virksomheten har vært en del av vaskeri- og renseribransjen i Bergen i flere tiår og holder til i Fjøsangerveien 32A.</p><div class="proof"><div><strong>4,5 / 5</strong><span>Google-vurdering</span></div><div><strong>134</strong><span>Google-anmeldelser</span></div></div></div></div></section>
+
+    <section id="besok"><div class="wrap visit">
+      <div><div class="k">Besøk oss</div><h2>Danmarksplass.</h2><p>Rens & Vask holder til i Fjøsangerveien 32A.</p>
+        <div class="details">
+          <div class="detail"><strong>Adresse</strong><span>Fjøsangerveien 32A<br>5053 Bergen</span></div>
+          <div class="detail"><strong>Telefon</strong><span><a href="tel:+4755298320">55 29 83 20</a></span></div>
+          <div class="detail"><strong>E-post</strong><span><a href="mailto:dinhdien56@gmail.com">dinhdien56@gmail.com</a></span></div>
+          <div class="detail"><strong>Veibeskrivelse</strong><span><a href="https://www.google.com/maps/search/?api=1&query=Rens+og+Vask+Fjøsangerveien+32A+Bergen" target="_blank" rel="noopener">Åpne i Google Maps ↗</a></span></div>
+        </div>
+      </div>
+      <aside class="hours"><h3>Åpningstider</h3>
+        <div class="row"><span>Mandag</span><strong>10:00–17:00</strong></div>
+        <div class="row"><span>Tirsdag</span><strong>10:00–17:00</strong></div>
+        <div class="row"><span>Onsdag</span><strong>10:00–17:00</strong></div>
+        <div class="row"><span>Torsdag</span><strong>10:00–17:00</strong></div>
+        <div class="row"><span>Fredag</span><strong>10:00–17:00</strong></div>
+        <div class="row"><span>Lørdag</span><strong>10:00–14:00</strong></div>
+        <div class="row"><span>Søndag</span><strong>Stengt</strong></div>
+        <p class="note">Åpningstidene er basert på offentlige oppføringer og må bekreftes før eventuell publisering.</p>
+      </aside>
+    </div></section>
+
+    <section class="cta"><div class="ctain"><h2>Spørsmål om vask eller rens?</h2><a class="btn btn-accent" href="tel:+4755298320">Ring 55 29 83 20</a></div></section>
+  </main>
+
+  <footer><div class="foot"><div class="brand"><div class="logo">R&V</div><div class="bc"><strong>Rens & Vask</strong><small>Vaskeri & renseri · Bergen</small></div></div><p class="disc">KONSEPTUTKAST — Dette er ikke den offisielle nettsiden til Rens & Vask AS. Demoen er laget som et uforpliktende designforslag basert på offentlig tilgjengelig bedriftsinformasjon. Tjenester, åpningstider, bilder og øvrige opplysninger må godkjennes av virksomheten før eventuell publisering. Stemningsbilder er generiske og viser ikke nødvendigvis virksomheten.</p></div></footer>
+</body>
+</html>
