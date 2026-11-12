@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#f2efe8">
+<title>Hysa Malerfirma | Konseptutkast</title>
+<meta name="description" content="Konseptutkast for Hysa Malerfirma i Bergen.">
+<style>
+:root{
+  --ink:#1b1b1b;
+  --paper:#f2efe8;
+  --white:#fff;
+  --red:#d84f39;
+  --red2:#b33b2b;
+  --muted:#6e6a64;
+  --line:rgba(27,27,27,.13);
+  --charcoal:#242424;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.concept{background:var(--red);color:#fff;text-align:center;padding:8px 18px;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+nav{background:rgba(242,239,232,.97);backdrop-filter:blur(10px);position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line)}
+.navin{max-width:1180px;margin:auto;height:78px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:44px;height:44px;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:950;font-size:12px;letter-spacing:-.03em}
+.bc strong{display:block;font-size:18px}.bc small{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.18em}
+.links{display:flex;align-items:center;gap:24px;font-size:12px;font-weight:800}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border:1px solid transparent;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.btn-red{background:var(--red);color:#fff}.btn-dark{background:var(--ink);color:#fff}.btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
+
+.hero{background:#d9d1c2}
+.hero-wrap{max-width:1440px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;min-height:720px}
+.hero-copy{padding:88px max(32px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+h1{font-size:clamp(58px,7.5vw,106px);line-height:.88;letter-spacing:-.07em;margin:0 0 26px;font-weight:950;max-width:720px}
+.hero-copy p{font-size:17px;line-height:1.75;color:#4f4c48;max-width:590px;margin:0 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-photo{position:relative;background:
+linear-gradient(0deg,rgba(0,0,0,.12),rgba(0,0,0,.02)),
+url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&fm=jpg&q=82&w=1800') center/cover no-repeat;min-height:520px}
+.badge{position:absolute;left:28px;bottom:28px;background:var(--ink);color:#fff;padding:20px 22px;max-width:235px}
+.badge strong{display:block;font-size:26px}.badge span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#bbb;margin-top:3px}
+
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);background:var(--white);border-bottom:1px solid var(--line)}
+.metrics div{padding:24px;text-align:center;border-right:1px solid var(--line)}.metrics div:last-child{border-right:0}
+.metrics strong{font-size:19px;display:block}.metrics span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+
+section{padding:94px 28px}.wrap{max-width:1180px;margin:auto}
+.section-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:end;margin-bottom:46px}
+.k{font-size:10px;color:var(--red);font-weight:900;text-transform:uppercase;letter-spacing:.2em}
+h2{font-size:clamp(42px,5vw,68px);line-height:.95;letter-spacing:-.055em;margin:10px 0 0;font-weight:950}
+.section-head p{margin:0;color:var(--muted);font-size:16px;line-height:1.76;max-width:580px}
+
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.service{background:#fff;border:1px solid var(--line);padding:32px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between}
+.service .num{font-weight:950;color:var(--red);font-size:12px}.service h3{font-size:29px;margin:42px 0 10px}.service p{margin:0;color:var(--muted);font-size:14px}
+
+.projects{background:var(--charcoal);color:#fff;padding:0}
+.project-grid{display:grid;grid-template-columns:1.2fr .8fr;min-height:620px}
+.project-photo{background:
+linear-gradient(0deg,rgba(0,0,0,.16),rgba(0,0,0,.02)),
+url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&fm=jpg&q=82&w=1800') center/cover no-repeat;min-height:500px}
+.project-copy{padding:80px 70px;display:flex;flex-direction:column;justify-content:center}
+.project-copy .k{color:#ff8b76}.project-copy p{color:#bbb;font-size:15px;line-height:1.8}
+.list{margin-top:26px;border-top:1px solid rgba(255,255,255,.12)}
+.item{display:grid;grid-template-columns:1fr auto;gap:18px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14px}.item strong{color:#ff927e}
+
+.trust{background:#fff}
+.trust-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.trust-copy p{color:var(--muted);font-size:16px;line-height:1.78}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{border:1px solid var(--line);padding:28px;background:var(--paper)}
+.card strong{display:block;font-size:28px;margin-bottom:8px}.card span{font-size:12px;color:var(--muted)}
+
+.contact{background:#ded8ce}
+.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:70px}
+.details{margin-top:28px;border-top:1px solid var(--line)}
+.detail{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:17px 0;border-bottom:1px solid var(--line);font-size:14px}
+.detail strong{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.13em}
+.contact-box{background:var(--ink);color:#fff;padding:34px}
+.contact-box h3{font-size:30px;margin:0 0 12px}.contact-box p{color:#bbb;font-size:14px;line-height:1.7}
+.contact-box a{display:block;margin-top:12px;padding:14px 16px;background:#333;font-weight:800;font-size:13px}
+.contact-box .primary{background:var(--red)}
+
+.cta{background:var(--red);color:#fff;padding:68px 28px}
+.ctain{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.ctain h2{margin:0;max-width:760px}.ctain .btn{background:#fff;color:var(--red)}
+footer{background:#181818;color:#ddd;padding:42px 28px}.foot{max-width:1180px;margin:auto}.disc{font-size:10px;color:#777;line-height:1.65;margin-top:22px}
+
+@media(max-width:900px){
+.links>a:not(.btn){display:none}.hero-wrap,.section-head,.project-grid,.trust-grid,.contact-grid{grid-template-columns:1fr}.hero-photo{order:-1;min-height:410px}.metrics{grid-template-columns:1fr 1fr}.services,.cards{grid-template-columns:1fr}.project-copy{padding:64px 24px}.ctain{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:520px){.navin{padding:0 18px}.metrics{grid-template-columns:1fr}.hero-copy{padding:62px 22px}h1{font-size:60px}.detail{grid-template-columns:105px 1fr}}
+</style>
+</head>
+<body>
+<div class="concept">Konseptutkast · Ikke offisiell nettside</div>
+
+<nav>
+<div class="navin">
+<a class="brand" href="#top"><div class="logo">HM</div><div class="bc"><strong>Hysa Malerfirma</strong><small>Malerarbeid · Bergen</small></div></a>
+<div class="links"><a href="#tjenester">Tjenester</a><a href="#firma">Om firmaet</a><a href="#kontakt">Kontakt</a><a class="btn btn-red" href="mailto:hysa.malerfirma@outlook.no">Be om tilbud</a></div>
+</div>
+</nav>
+
+<main id="top">
+<header class="hero">
+<div class="hero-wrap">
+<div class="hero-copy">
+<div class="eyebrow">Malerfirma i Bergen siden 2012</div>
+<h1>Godt grunnarbeid. Et bedre resultat.</h1>
+<p>Innvendig og utvendig malerarbeid, sparkling og overflatebehandling for boliger og bygg i Bergen.</p>
+<div class="actions">
+<a class="btn btn-red" href="mailto:hysa.malerfirma@outlook.no">Be om tilbud</a>
+<a class="btn btn-dark" href="tel:+4792644769">Ring 926 44 769</a>
+</div>
+</div>
+<div class="hero-photo" role="img" aria-label="Profesjonelt malerarbeid">
+<div class="badge"><strong>Siden 2012</strong><span>Familiebedrift i Bergen</span></div>
+</div>
+</div>
+</header>
+
+<div class="metrics">
+<div><strong>2012</strong><span>Etablert</span></div>
+<div><strong>5 ansatte</strong><span>Registrert 2026</span></div>
+<div><strong>Innvendig & utvendig</strong><span>Malerarbeid</span></div>
+<div><strong>Bergen</strong><span>Lokalt firma</span></div>
+</div>
+
+<section id="tjenester">
+<div class="wrap">
+<div class="section-head">
+<div><div class="k">Tjenester</div><h2>Fra underlag til siste strøk.</h2></div>
+<p>Hysa Malerfirma arbeider med maling av bygg og boliger, både innvendig og utvendig. Firmaet har også erfaring med sparkling og behandling av nye gips- og betongflater.</p>
+</div>
+<div class="services">
+<article class="service"><div class="num">01</div><div><h3>Innvendig maling</h3><p>Maling av vegger, tak og andre innvendige flater i bolig og bygg.</p></div></article>
+<article class="service"><div class="num">02</div><div><h3>Utvendig maling</h3><p>Malerarbeid på utvendige flater etter avtale og behov.</p></div></article>
+<article class="service"><div class="num">03</div><div><h3>Sparkling</h3><p>Forbehandling og sparkling som grunnlag for et jevnt og varig sluttresultat.</p></div></article>
+<article class="service"><div class="num">04</div><div><h3>Gips & betong</h3><p>Arbeid med nye gips- og betongflater, inkludert klargjøring før maling.</p></div></article>
+</div>
+</div>
+</section>
+
+<section class="projects" id="firma">
+<div class="project-grid">
+<div class="project-photo"></div>
+<div class="project-copy">
+<div class="k">Hysa Malerfirma</div>
+<h2>Et firma i vekst.</h2>
+<p>Hysa Malerfirma er en familiebedrift etablert i Bergen i 2012. Offentlige registre viser fem ansatte i 2026, og firmaet søker nå flere erfarne malere.</p>
+<div class="list">
+<div class="item"><span>Familiebedrift</span><strong>Siden 2012</strong></div>
+<div class="item"><span>Registrerte ansatte</span><strong>5</strong></div>
+<div class="item"><span>Aktivitet</span><strong>Maler- og glassarbeid</strong></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="trust">
+<div class="wrap trust-grid">
+<div class="trust-copy">
+<div class="k">Hvorfor egen nettside?</div>
+<h2>Gjør det lettere å finne og kontakte firmaet.</h2>
+<p>En tydelig nettside kan samle tjenester, kontaktinformasjon og informasjon om firmaet på ett sted, slik at potensielle kunder raskt forstår hva dere tilbyr og hvordan de kan be om et tilbud.</p>
+</div>
+<div class="cards">
+<div class="card"><strong>01</strong><span>Tjenester samlet på ett sted</span></div>
+<div class="card"><strong>02</strong><span>Direkte kontakt for tilbud</span></div>
+<div class="card"><strong>03</strong><span>Bedre profesjonelt førsteinntrykk</span></div>
+<div class="card"><strong>04</strong><span>Fungerer godt på mobil</span></div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="kontakt">
+<div class="wrap contact-grid">
+<div>
+<div class="k">Kontakt</div>
+<h2>Ta kontakt om ditt prosjekt.</h2>
+<div class="details">
+<div class="detail"><strong>Adresse</strong><span>Nybøvegen 28A<br>5221 Nesttun</span></div>
+<div class="detail"><strong>Telefon</strong><span><a href="tel:+4792644769">926 44 769</a></span></div>
+<div class="detail"><strong>E-post</strong><span><a href="mailto:hysa.malerfirma@outlook.no">hysa.malerfirma@outlook.no</a></span></div>
+<div class="detail"><strong>Org.nr.</strong><span>997 903 110</span></div>
+</div>
+</div>
+<aside class="contact-box">
+<h3>Ønsker du et tilbud?</h3>
+<p>Send en kort beskrivelse av arbeidet, så kan dere avklare behov, omfang og tidspunkt direkte.</p>
+<a class="primary" href="mailto:hysa.malerfirma@outlook.no">hysa.malerfirma@outlook.no</a>
+<a href="tel:+4792644769">926 44 769</a>
+</aside>
+</div>
+</section>
+
+<section class="cta">
+<div class="ctain">
+<h2>Har du et prosjekt som trenger et profesjonelt sluttresultat?</h2>
+<a class="btn" href="mailto:hysa.malerfirma@outlook.no">Be om tilbud</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="foot">
+<div class="brand"><div class="logo">HM</div><div class="bc"><strong>Hysa Malerfirma</strong><small>Malerarbeid · Bergen</small></div></div>
+<p class="disc">KONSEPTUTKAST — Dette er ikke den offisielle nettsiden til Hysa Malerfirma. Demoen er laget som et uforpliktende designforslag basert på offentlig tilgjengelig bedriftsinformasjon. Tjenester, bilder og øvrige opplysninger må godkjennes av virksomheten før eventuell publisering. Stemningsbilder er generiske og viser ikke nødvendigvis virksomheten.</p>
+</div>
+</footer>
+</body>
+</html>
