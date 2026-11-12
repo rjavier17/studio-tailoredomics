@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#6c3f33">
+<title>Nang Fa Thaimassasje | Konseptutkast</title>
+<meta name="description" content="Konseptutkast for Nang Fa Thaimassasje i Bergen.">
+<style>
+:root{
+  --wine:#6c3f33;
+  --wine2:#4f2d27;
+  --sand:#efe4d3;
+  --cream:#fbf7f1;
+  --gold:#c6a15b;
+  --ink:#2b211d;
+  --muted:#786c66;
+  --line:rgba(43,33,29,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.concept{background:#2a1f1b;color:#fff;text-align:center;padding:8px 18px;font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+nav{position:sticky;top:0;z-index:30;background:rgba(251,247,241,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{max-width:1180px;margin:auto;height:76px;padding:0 28px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:14px}
+.mark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:#fff;font-family:Georgia,serif;font-size:19px}
+.bc strong{display:block;font-family:Georgia,serif;font-size:20px;font-weight:600}.bc small{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.links{display:flex;align-items:center;gap:24px;font-size:12px;font-weight:800}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border:1px solid transparent;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.btn-dark{background:var(--wine);color:#fff}.btn-outline{border-color:rgba(255,255,255,.45);color:#fff}
+.hero{position:relative;min-height:790px;background:
+linear-gradient(rgba(55,31,26,.48),rgba(55,31,26,.58)),
+url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&fm=jpg&q=82&w=2000') center/cover no-repeat;
+color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 28px}
+.hero-inner{max-width:850px;margin:auto}
+.eyebrow{font-size:11px;font-weight:900;letter-spacing:.22em;text-transform:uppercase;color:#ead7ae;margin-bottom:20px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(58px,8vw,108px);font-weight:500;line-height:.95;letter-spacing:-.045em;margin:0 0 24px}
+.hero p{max-width:700px;margin:0 auto 32px;color:#f1e9df;font-size:18px;line-height:1.72}
+.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
+.rating{display:flex;justify-content:center;align-items:center;gap:15px;font-size:14px}.stars{color:#f0cc75;letter-spacing:.12em}.rating span{color:#e2d8ce;font-size:11px}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-bottom:1px solid var(--line)}
+.quick div{padding:24px 20px;text-align:center;border-right:1px solid var(--line)}.quick div:last-child{border-right:0}.quick strong{display:block;font-family:Georgia,serif;font-size:18px}.quick span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+section{padding:96px 28px}.wrap{max-width:1180px;margin:auto}
+.intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}.kicker{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.2em;color:var(--wine)}h2{font-family:Georgia,serif;font-size:clamp(42px,5vw,66px);font-weight:500;line-height:1;letter-spacing:-.035em;margin:12px 0 0}.intro p{font-size:17px;color:var(--muted);line-height:1.8;margin:3px 0 0}
+.menu{background:var(--sand)}
+.menu-head{text-align:center;max-width:760px;margin:0 auto 44px}.menu-head h2{margin-bottom:15px}.menu-head p{color:var(--muted)}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.price-card{background:#fff;border:1px solid var(--line);padding:34px}
+.price-card h3{font-family:Georgia,serif;font-size:31px;font-weight:500;margin:0 0 8px}.price-card>p{color:var(--muted);font-size:14px;margin:0 0 24px}
+.price-row{display:grid;grid-template-columns:1fr auto;gap:20px;padding:13px 0;border-top:1px solid var(--line);font-size:14px}.price-row strong{font-weight:850}
+.note{font-size:11px;color:var(--muted);margin-top:18px;text-align:center}
+.story{padding:0;background:var(--wine2);color:#fff}.story-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:620px}
+.story-photo{background:
+linear-gradient(0deg,rgba(0,0,0,.18),rgba(0,0,0,.02)),
+url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&fm=jpg&q=82&w=1600') center/cover no-repeat;min-height:500px}
+.story-copy{padding:86px 70px;display:flex;justify-content:center;flex-direction:column}.story-copy .kicker{color:#e2c68e}.story-copy h2{max-width:520px}.story-copy p{color:#dbcfc7;max-width:520px;font-size:15px;line-height:1.8}
+.proof{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}.proof div{border-top:1px solid rgba(255,255,255,.16);padding-top:17px}.proof strong{display:block;color:#efcf8e;font-size:26px}.proof span{font-size:10px;color:#bcaea5;text-transform:uppercase;letter-spacing:.11em}
+.visit{display:grid;grid-template-columns:1fr .9fr;gap:70px;align-items:start}.visit p{color:var(--muted)}.details{margin-top:30px;border-top:1px solid var(--line)}.detail{display:grid;grid-template-columns:145px 1fr;gap:20px;padding:17px 0;border-bottom:1px solid var(--line);font-size:14px}.detail strong{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.13em}
+.hours{background:#fff;border:1px solid var(--line);padding:34px}.hours h3{font-family:Georgia,serif;font-size:29px;font-weight:500;margin:0 0 19px}.row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.hours-note{font-size:11px;color:var(--muted);margin-top:18px}
+.cta{background:var(--wine);color:#fff;padding:72px 28px}.ctain{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}.ctain h2{margin:0;max-width:770px}.ctain .btn{background:#fff;color:var(--wine)}
+footer{background:#241a17;color:#ded3cb;padding:42px 28px}.foot{max-width:1180px;margin:auto}.disc{font-size:10px;color:#887a72;line-height:1.65;margin-top:22px}
+@media(max-width:900px){
+.links>a:not(.btn){display:none}.hero{min-height:650px}.quick{grid-template-columns:1fr 1fr}.intro,.prices,.story-grid,.visit{grid-template-columns:1fr}.story-photo{min-height:390px}.story-copy{padding:64px 24px}.ctain{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:520px){.navin{padding:0 18px}.quick{grid-template-columns:1fr}.quick div{border-right:0;border-bottom:1px solid var(--line)}h1{font-size:58px}.hero p{font-size:16px}.price-card{padding:26px}}
+</style>
+</head>
+<body>
+<div class="concept">Konseptutkast · Ikke offisiell nettside</div>
+
+<nav>
+<div class="navin">
+<a class="brand" href="#top"><div class="mark">NF</div><div class="bc"><strong>Nang Fa</strong><small>Thaimassasje · Bergen</small></div></a>
+<div class="links"><a href="#behandlinger">Behandlinger</a><a href="#om">Om salongen</a><a href="#besok">Besøk oss</a><a class="btn btn-dark" href="tel:+4793995663">Bestill time</a></div>
+</div>
+</nav>
+
+<main id="top">
+<header class="hero">
+<div class="hero-inner">
+<div class="eyebrow">Thaimassasje i Bergen sentrum</div>
+<h1>Ro i kroppen.<br>Tid for deg.</h1>
+<p>Nang Fa tilbyr thaimassasje i rolige lokaler i Christian Michelsens gate, midt i Bergen sentrum.</p>
+<div class="hero-actions"><a class="btn btn-dark" href="tel:+4793995663">Ring 93 99 56 63</a><a class="btn btn-outline" href="#behandlinger">Se behandlinger</a></div>
+<div class="rating"><div class="stars">★★★★★</div><div><strong>4,8 / 5</strong><span>167 Google-anmeldelser</span></div></div>
+</div>
+</header>
+
+<div class="quick">
+<div><strong>Chr. Michelsens gate 11</strong><span>5012 Bergen</span></div>
+<div><strong>93 99 56 63</strong><span>Bestilling & spørsmål</span></div>
+<div><strong>Drop-in mulig</strong><span>Time anbefales</span></div>
+<div><strong>4,8 / 5</strong><span>167 anmeldelser</span></div>
+</div>
+
+<section>
+<div class="wrap intro">
+<div><div class="kicker">Nang Fa Thaimassasje</div><h2>En pause midt i byen.</h2></div>
+<p>Salongen ligger sentralt i Bergen og tilbyr ulike former for thai oljemassasje. Du kan bestille på forhånd via telefon eller spørre om drop-in.</p>
+</div>
+</section>
+
+<section class="menu" id="behandlinger">
+<div class="wrap">
+<div class="menu-head"><div class="kicker">Behandlinger & priser</div><h2>Velg tid og intensitet.</h2><p>Offentlig oppgitte priser fra salongens profil. Endelig prisliste bekreftes før publisering.</p></div>
+<div class="prices">
+<article class="price-card">
+<h3>Thai oljemassasje · Medium</h3>
+<p>For deg som ønsker en moderat behandling.</p>
+<div class="price-row"><span>30 min</span><strong>550 kr</strong></div>
+<div class="price-row"><span>45 min</span><strong>700 kr</strong></div>
+<div class="price-row"><span>60 min</span><strong>800 kr</strong></div>
+<div class="price-row"><span>90 min</span><strong>1.450 kr</strong></div>
+<div class="price-row"><span>120 min</span><strong>1.600 kr</strong></div>
+</article>
+<article class="price-card">
+<h3>Thai oljemassasje · Hard</h3>
+<p>For deg som ønsker en fastere behandling.</p>
+<div class="price-row"><span>30 min</span><strong>650 kr</strong></div>
+<div class="price-row"><span>45 min</span><strong>800 kr</strong></div>
+<div class="price-row"><span>60 min</span><strong>1.000 kr</strong></div>
+<div class="price-row"><span>90 min</span><strong>1.650 kr</strong></div>
+<div class="price-row"><span>120 min</span><strong>2.000 kr</strong></div>
+</article>
+</div>
+<p class="note">Priser og behandlinger er basert på offentlig tilgjengelige oppføringer og må bekreftes av virksomheten før eventuell publisering.</p>
+</div>
+</section>
+
+<section class="story" id="om">
+<div class="story-grid">
+<div class="story-photo"></div>
+<div class="story-copy">
+<div class="kicker">Sentralt i Bergen</div>
+<h2>En enkel vei til neste time.</h2>
+<p>En egen nettside kan samle behandlinger, priser, åpningstider og kontaktinformasjon på ett sted – lett tilgjengelig både for faste kunder og nye besøkende.</p>
+<div class="proof"><div><strong>4,8 / 5</strong><span>Google-vurdering</span></div><div><strong>167</strong><span>Google-anmeldelser</span></div></div>
+</div>
+</div>
+</section>
+
+<section id="besok">
+<div class="wrap visit">
+<div>
+<div class="kicker">Besøk oss</div>
+<h2>Midt i Bergen.</h2>
+<p>Nang Fa holder til i Christian Michelsens gate 11.</p>
+<div class="details">
+<div class="detail"><strong>Adresse</strong><span>Christian Michelsens gate 11<br>5012 Bergen</span></div>
+<div class="detail"><strong>Telefon</strong><span><a href="tel:+4793995663">93 99 56 63</a></span></div>
+<div class="detail"><strong>Facebook</strong><span><a href="https://www.facebook.com/nangfabergen/" target="_blank" rel="noopener">Nang Fa Bergen ↗</a></span></div>
+<div class="detail"><strong>Veibeskrivelse</strong><span><a href="https://www.google.com/maps/search/?api=1&query=Nang+Fa+Thaimassasje+Christian+Michelsens+gate+11+Bergen" target="_blank" rel="noopener">Åpne i Google Maps ↗</a></span></div>
+</div>
+</div>
+<aside class="hours">
+<h3>Åpningstider</h3>
+<div class="row"><span>Mandag</span><strong>11:00–20:00</strong></div>
+<div class="row"><span>Tirsdag</span><strong>11:00–20:00</strong></div>
+<div class="row"><span>Onsdag</span><strong>11:00–20:00</strong></div>
+<div class="row"><span>Torsdag</span><strong>11:00–20:00</strong></div>
+<div class="row"><span>Fredag</span><strong>12:00–20:00</strong></div>
+<div class="row"><span>Lørdag</span><strong>12:00–20:00</strong></div>
+<div class="row"><span>Søndag</span><strong>11:00–20:00</strong></div>
+<p class="hours-note">Åpningstidene er basert på den aktuelle Google-oppføringen og må bekreftes før eventuell publisering.</p>
+</aside>
+</div>
+</section>
+
+<section class="cta">
+<div class="ctain"><h2>Vil du bestille eller spørre om ledig tid?</h2><a class="btn" href="tel:+4793995663">Ring 93 99 56 63</a></div>
+</section>
+</main>
+
+<footer>
+<div class="foot">
+<div class="brand"><div class="mark">NF</div><div class="bc"><strong>Nang Fa</strong><small>Thaimassasje · Bergen</small></div></div>
+<p class="disc">KONSEPTUTKAST — Dette er ikke den offisielle nettsiden til Nang Fa Thaimassasje. Demoen er laget som et uforpliktende designforslag basert på offentlig tilgjengelig bedriftsinformasjon. Tjenester, priser, åpningstider, bilder og øvrige opplysninger må godkjennes av virksomheten før eventuell publisering. Stemningsbilder er generiske og viser ikke nødvendigvis virksomheten.</p>
+</div>
+</footer>
+</body>
+</html>
