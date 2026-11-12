@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Qasimfade Bergen | Konseptutkast</title>
+<meta name="description" content="Konseptutkast for Qasimfade i Bergen.">
+<style>
+:root{--b:#090909;--p:#f4f0e8;--a:#e68600;--m:#aaa69e;--i:#171717}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--p);color:var(--i);font-family:Inter,system-ui,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}
+.concept{background:var(--a);color:#090909;text-align:center;padding:7px 18px;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+.nav{position:sticky;top:0;z-index:30;background:rgba(9,9,9,.96);color:#fff;border-bottom:1px solid #222}.navin{max-width:1180px;margin:auto;padding:0 28px;height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:14px}.logo{width:42px;height:42px;border:1px solid rgba(216,255,62,.55);border-radius:50%;display:grid;place-items:center;color:var(--a);font-weight:900}.bc strong{display:block;font-size:18px}.bc small{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#888}
+.links{display:flex;align-items:center;gap:26px;font-size:12px;font-weight:800}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border:1px solid transparent;font-size:11px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}.accent{background:var(--a);color:#090909}.outline{border-color:#555;color:#fff}
+.hero{background:var(--b);color:#fff;display:grid;grid-template-columns:1.02fr .98fr;min-height:720px}.copy{padding:82px max(28px,calc((100vw - 1180px)/2));display:flex;flex-direction:column;justify-content:center}.eyebrow{color:var(--a);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.22em;margin-bottom:21px}h1{font-size:clamp(62px,8.3vw,118px);line-height:.83;letter-spacing:-.075em;margin:0 0 28px;font-weight:950}.copy p{color:#bdbdb7;font-size:17px;line-height:1.72;max-width:560px;margin:0 0 32px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:42px}.rating{display:flex;gap:16px;align-items:center}.stars{color:var(--a);letter-spacing:.09em}.rating span{display:block;color:#777;font-size:11px}
+.photo{position:relative;background:linear-gradient(to top,rgba(0,0,0,.48),rgba(0,0,0,.03) 60%),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&fm=jpg&q=82&w=1600') center/cover no-repeat;min-height:520px}.tag{position:absolute;right:34px;bottom:34px;background:var(--a);color:#090909;padding:18px 21px;font-weight:950;text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);background:#151515;color:#fff}.strip div{padding:24px;text-align:center;border-right:1px solid #272727}.strip strong{display:block;font-size:19px}.strip span{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.13em}
+section{padding:92px 28px}.wrap{max-width:1180px;margin:auto}.head{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:end;margin-bottom:48px}.k{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.2em;color:#666}h2{font-size:clamp(42px,5.4vw,70px);line-height:.92;letter-spacing:-.055em;margin:10px 0 0;font-weight:950}.head p{margin:0;color:#68655f;max-width:580px;font-size:16px;line-height:1.75}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{background:#fff;border:1px solid #ddd;padding:32px;min-height:270px;display:flex;flex-direction:column;justify-content:space-between}.service .num{font-size:11px;color:#777;font-weight:900}.service h3{font-size:31px;margin:48px 0 12px}.service p{font-size:14px;color:#706c65;margin:0}
+.statement{background:var(--a);padding:74px 28px}.statement .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.statement h2{margin:0}.statement p{font-size:17px;line-height:1.72;margin:0}
+.black{background:#111;color:#fff;padding:0}.grid{display:grid;grid-template-columns:1fr 1fr;min-height:600px}.work{background:linear-gradient(0deg,rgba(0,0,0,.25),rgba(0,0,0,.02)),url('https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&fm=jpg&q=82&w=1600') center/cover no-repeat;min-height:500px}.blackcopy{padding:80px 70px;display:flex;flex-direction:column;justify-content:center}.blackcopy .k{color:var(--a)}.blackcopy p{color:#aaa;max-width:500px}.proof{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}.proof div{border-top:1px solid #2d2d2d;padding-top:17px}.proof strong{display:block;color:var(--a);font-size:26px}.proof span{font-size:10px;color:#777;text-transform:uppercase;letter-spacing:.12em}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:70px}.details{margin-top:30px;border-top:1px solid #ddd}.detail{display:grid;grid-template-columns:145px 1fr;gap:20px;padding:17px 0;border-bottom:1px solid #ddd;font-size:14px}.detail strong{font-size:10px;color:#777;text-transform:uppercase;letter-spacing:.13em}.hours{background:#111;color:#fff;padding:34px}.hours h3{font-size:29px;margin:0 0 19px}.row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #2d2d2d;font-size:14px}.note{font-size:11px;color:#777;margin-top:18px}
+.cta{background:#111;color:#fff;padding:66px 28px}.ctain{max-width:1180px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:30px}.ctain h2{margin:0}
+footer{background:#050505;color:#ccc;padding:42px 28px}.foot{max-width:1180px;margin:auto}.disc{font-size:10px;line-height:1.65;color:#666;margin-top:20px}
+@media(max-width:900px){.links>a:not(.btn){display:none}.hero,.head,.grid,.visit,.statement .wrap{grid-template-columns:1fr}.photo{order:-1;min-height:430px}.copy{padding:66px 24px}.strip{grid-template-columns:1fr}.services{grid-template-columns:1fr}.blackcopy{padding:64px 24px}.ctain{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="concept">Konseptutkast · Ikke offisiell nettside</div>
+<nav class="nav"><div class="navin">
+<a class="brand" href="#top"><div class="logo">QF</div><div class="bc"><strong>Qasimfade</strong><small>Barbershop · Bergen</small></div></a>
+<div class="links"><a href="#tjenester">Tjenester</a><a href="#salongen">Salongen</a><a href="#besok">Besøk oss</a><a class="btn accent" href="https://www.instagram.com/qasimfade/" target="_blank" rel="noopener">Instagram</a></div>
+</div></nav>
+
+<main id="top">
+<header class="hero">
+<div class="copy">
+<div class="eyebrow">Barbershop i Bergen sentrum</div>
+<h1>Sharp cuts.<br>Clean fades.</h1>
+<p>Fades og klipp for menn og barn – midt i Bergen. Moderne stil, presist arbeid og en barbershop med sterke kundeomtaler.</p>
+<div class="actions"><a class="btn accent" href="https://www.instagram.com/qasimfade/" target="_blank" rel="noopener">Se Instagram</a><a class="btn outline" href="#besok">Finn salongen</a></div>
+<div class="rating"><div class="stars">★★★★★</div><div><strong>4,9 / 5</strong><span>124 Google-anmeldelser</span></div></div>
+</div>
+<div class="photo"><div class="tag">Øvregaten 7<br>Bergen</div></div>
+</header>
+
+<div class="strip"><div><strong>Øvregaten 7</strong><span>5003 Bergen</span></div><div><strong>Mandag–lørdag</strong><span>10:00–18:00</span></div><div><strong>4,9 / 5</strong><span>124 Google-anmeldelser</span></div></div>
+
+<section id="tjenester"><div class="wrap">
+<div class="head"><div><div class="k">Tjenester</div><h2>Presisjon i hver klipp.</h2></div><p>Qasimfade er kjent for moderne fades og klipp for både menn og barn. Ta kontakt via Instagram for spørsmål om time, drop-in og tilgjengelighet.</p></div>
+<div class="services">
+<article class="service"><div class="num">01</div><div><h3>Fade</h3><p>Rene overganger og detaljert maskinarbeid for et skarpt, moderne uttrykk.</p></div></article>
+<article class="service"><div class="num">02</div><div><h3>Herreklipp</h3><p>Klassiske og moderne herreklipp tilpasset stil, hårtype og ønsket resultat.</p></div></article>
+<article class="service"><div class="num">03</div><div><h3>Barneklipp</h3><p>Klipp for barn i samme moderne og presise stil som resten av salongen.</p></div></article>
+</div></div></section>
+
+<section class="statement"><div class="wrap"><h2>Midt i byen.<br>Rett på detaljene.</h2><p>En enkel nettside gjør det raskt å finne åpningstider, adresse, tjenester og Instagram – uten at kundene må lete gjennom flere profiler.</p></div></section>
+
+<section class="black" id="salongen"><div class="grid"><div class="work"></div><div class="blackcopy"><div class="k">Qasimfade</div><h2>Et navn bygget på resultatet.</h2><p>Med svært sterke offentlige kundeomtaler og en sentral plassering i Bergen har Qasimfade allerede en tydelig digital tilstedeværelse. En egen nettside kan samle det viktigste på ett sted.</p><div class="proof"><div><strong>4,9 / 5</strong><span>Google-vurdering</span></div><div><strong>124</strong><span>Google-anmeldelser</span></div></div></div></div></section>
+
+<section id="besok"><div class="wrap visit"><div><div class="k">Besøk oss</div><h2>Øvregaten 7.</h2><p>Qasimfade ligger sentralt i Bergen.</p><div class="details">
+<div class="detail"><strong>Adresse</strong><span>Øvregaten 7<br>5003 Bergen</span></div>
+<div class="detail"><strong>Instagram</strong><span><a href="https://www.instagram.com/qasimfade/" target="_blank" rel="noopener">@qasimfade ↗</a></span></div>
+<div class="detail"><strong>Veibeskrivelse</strong><span><a href="https://www.google.com/maps/search/?api=1&query=Qasimfade+Øvregaten+7+Bergen" target="_blank" rel="noopener">Åpne i Google Maps ↗</a></span></div>
+</div></div>
+<aside class="hours"><h3>Åpningstider</h3>
+<div class="row"><span>Mandag</span><strong>10:00–18:00</strong></div><div class="row"><span>Tirsdag</span><strong>10:00–18:00</strong></div><div class="row"><span>Onsdag</span><strong>10:00–18:00</strong></div><div class="row"><span>Torsdag</span><strong>10:00–18:00</strong></div><div class="row"><span>Fredag</span><strong>10:00–18:00</strong></div><div class="row"><span>Lørdag</span><strong>10:00–18:00</strong></div><div class="row"><span>Søndag</span><strong>Stengt</strong></div>
+<p class="note">Åpningstidene er basert på offentlige oppføringer og må bekreftes før eventuell publisering.</p></aside></div></section>
+
+<section class="cta"><div class="ctain"><h2>Klar for en fresh klipp?</h2><a class="btn accent" href="https://www.instagram.com/qasimfade/" target="_blank" rel="noopener">Kontakt på Instagram</a></div></section>
+</main>
+
+<footer><div class="foot"><div class="brand"><div class="logo">QF</div><div class="bc"><strong>Qasimfade</strong><small>Barbershop · Bergen</small></div></div><p class="disc">KONSEPTUTKAST — Dette er ikke den offisielle nettsiden til Qasimfade. Demoen er laget som et uforpliktende designforslag basert på offentlig tilgjengelig bedriftsinformasjon. Tjenester, åpningstider, bilder og øvrige opplysninger må godkjennes av virksomheten før eventuell publisering. Stemningsbilder er generiske og viser ikke nødvendigvis virksomheten.</p></div></footer>
+</body>
+</html>
