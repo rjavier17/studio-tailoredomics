@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#24352d">
+<title>Malermester Yngve Haugsbakk AS | Konseptutkast</title>
+<meta name="description" content="Konseptutkast for Malermester Yngve Haugsbakk AS.">
+<style>
+:root{
+  --forest:#24352d;
+  --forest2:#192720;
+  --sage:#d9dfd3;
+  --paper:#f5f2ea;
+  --white:#fff;
+  --ochre:#d7a647;
+  --ink:#1e241f;
+  --muted:#6f756f;
+  --line:rgba(30,36,31,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.concept{background:var(--ochre);color:#1d2b24;text-align:center;padding:8px 18px;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+nav{position:sticky;top:0;z-index:30;background:rgba(245,242,234,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{max-width:1180px;margin:auto;height:78px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:14px}
+.mark{width:44px;height:44px;border-radius:50%;background:var(--forest);color:#fff;display:grid;place-items:center;font-weight:950;font-size:12px}
+.bc strong{display:block;font-size:17px}.bc small{font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted)}
+.links{display:flex;align-items:center;gap:24px;font-size:12px;font-weight:800}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border:1px solid transparent;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.btn-dark{background:var(--forest);color:#fff}.btn-light{background:#fff;color:var(--forest);border:1px solid rgba(255,255,255,.35)}
+
+.hero{background:var(--forest);color:#fff;padding:0}
+.hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;min-height:730px}
+.hero-photo{background:
+linear-gradient(0deg,rgba(25,39,32,.18),rgba(25,39,32,.03)),
+url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&fm=jpg&q=82&w=1800') center/cover no-repeat;min-height:520px}
+.hero-copy{padding:86px max(34px,calc((100vw - 1180px)/2)) 78px 70px;display:flex;justify-content:center;flex-direction:column}
+.eyebrow{font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:#efd18c;margin-bottom:18px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(56px,7vw,94px);font-weight:500;line-height:.93;letter-spacing:-.04em;margin:0 0 26px;max-width:720px}
+.hero p{color:#cbd4ce;font-size:17px;line-height:1.75;max-width:580px;margin:0 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.badges{display:flex;gap:28px;flex-wrap:wrap;margin-top:42px}
+.badges div{border-top:1px solid rgba(255,255,255,.18);padding-top:13px;min-width:150px}
+.badges strong{display:block;color:#efd18c;font-size:18px}.badges span{font-size:10px;color:#9eaaa3;text-transform:uppercase;letter-spacing:.11em}
+
+.facts{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-bottom:1px solid var(--line)}
+.facts div{padding:23px 20px;text-align:center;border-right:1px solid var(--line)}.facts div:last-child{border-right:0}
+.facts strong{display:block;font-size:18px}.facts span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+
+section{padding:92px 28px}.wrap{max-width:1180px;margin:auto}
+.section-head{display:grid;grid-template-columns:.78fr 1.22fr;gap:50px;align-items:end;margin-bottom:44px}
+.k{font-size:10px;color:#6f806f;font-weight:900;text-transform:uppercase;letter-spacing:.2em}
+h2{font-family:Georgia,serif;font-size:clamp(42px,5vw,66px);font-weight:500;line-height:1;letter-spacing:-.035em;margin:10px 0 0}
+.section-head p{margin:0;color:var(--muted);font-size:16px;line-height:1.76;max-width:580px}
+
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.service{background:#fff;border:1px solid var(--line);padding:30px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between}
+.service .num{font-size:11px;color:#7b8d7b;font-weight:900}
+.service h3{font-family:Georgia,serif;font-size:29px;font-weight:500;margin:46px 0 10px}
+.service p{font-size:14px;color:var(--muted);margin:0}
+
+.master{background:var(--sage)}
+.master-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.master-card{background:#fff;padding:34px;border:1px solid rgba(30,36,31,.1)}
+.master-card .seal{width:72px;height:72px;border-radius:50%;background:var(--forest);color:#fff;display:grid;place-items:center;font-weight:950;margin-bottom:24px}
+.master-card h3{font-family:Georgia,serif;font-size:33px;font-weight:500;margin:0 0 12px}
+.master-card p{color:var(--muted);font-size:14px;line-height:1.75}
+.master-copy p{color:#58625b;font-size:16px;line-height:1.8}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.stat{border-top:1px solid rgba(30,36,31,.18);padding-top:15px}
+.stat strong{display:block;font-size:27px;color:var(--forest)}.stat span{font-size:10px;color:#68716b;text-transform:uppercase;letter-spacing:.11em}
+
+.projects{background:var(--forest2);color:#fff;padding:0}
+.project-grid{display:grid;grid-template-columns:1.1fr .9fr;min-height:580px}
+.project-photo{background:
+linear-gradient(0deg,rgba(0,0,0,.16),rgba(0,0,0,.02)),
+url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&fm=jpg&q=82&w=1800') center/cover no-repeat;min-height:470px}
+.project-copy{padding:78px 66px;display:flex;justify-content:center;flex-direction:column}
+.project-copy .k{color:#efd18c}.project-copy p{color:#bcc7c0;font-size:15px;line-height:1.8}
+.checks{margin-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+.check{display:grid;grid-template-columns:1fr auto;gap:16px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:14px}
+.check strong{color:#efd18c}
+
+.contact{background:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr .9fr;gap:70px}
+.details{margin-top:28px;border-top:1px solid var(--line)}
+.detail{display:grid;grid-template-columns:145px 1fr;gap:18px;padding:17px 0;border-bottom:1px solid var(--line);font-size:14px}
+.detail strong{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.13em}
+.box{background:var(--forest);color:#fff;padding:34px}
+.box h3{font-family:Georgia,serif;font-size:31px;font-weight:500;margin:0 0 12px}
+.box p{font-size:14px;color:#c5d0c9;line-height:1.7}
+.box a{display:block;margin-top:12px;background:#31483c;padding:14px 16px;font-size:13px;font-weight:800}
+.box .primary{background:var(--ochre);color:#1f2d25}
+
+.cta{background:var(--ochre);padding:68px 28px}
+.ctain{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.ctain h2{margin:0;color:#1d2b24;max-width:760px}.ctain .btn{background:var(--forest);color:#fff}
+footer{background:#17231d;color:#d6ded8;padding:42px 28px}.foot{max-width:1180px;margin:auto}.disc{font-size:10px;color:#79877f;line-height:1.65;margin-top:22px}
+
+@media(max-width:900px){
+.links>a:not(.btn){display:none}.hero-grid,.section-head,.master-grid,.project-grid,.contact-grid{grid-template-columns:1fr}.hero-photo{min-height:420px}.hero-copy{padding:62px 24px}.facts{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr}.project-copy{padding:60px 24px}.ctain{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:520px){.navin{padding:0 18px}.facts{grid-template-columns:1fr}.detail{grid-template-columns:105px 1fr}h1{font-size:58px}}
+</style>
+</head>
+<body>
+<div class="concept">Konseptutkast · Ikke offisiell nettside</div>
+
+<nav>
+<div class="navin">
+<a class="brand" href="#top"><div class="mark">YH</div><div class="bc"><strong>Malermester Yngve Haugsbakk AS</strong><small>Malerarbeid · Bergen</small></div></a>
+<div class="links"><a href="#tjenester">Tjenester</a><a href="#mester">Mesterbedrift</a><a href="#kontakt">Kontakt</a><a class="btn btn-dark" href="mailto:ynghaug@gmail.com">Be om tilbud</a></div>
+</div>
+</nav>
+
+<main id="top">
+<header class="hero">
+<div class="hero-grid">
+<div class="hero-photo" role="img" aria-label="Profesjonelt malerarbeid"></div>
+<div class="hero-copy">
+<div class="eyebrow">Malermester i Bergen</div>
+<h1>Fagarbeid som holder seg pent over tid.</h1>
+<p>Innvendig og utvendig malerarbeid for boliger og bygg i Bergen. Profesjonell utførelse med fokus på godt grunnarbeid og varige resultater.</p>
+<div class="actions"><a class="btn btn-light" href="mailto:ynghaug@gmail.com">Be om tilbud</a><a class="btn btn-dark" href="tel:+4792842275">Ring 92 84 22 75</a></div>
+<div class="badges"><div><strong>Mesterbedrift</strong><span>Registrert mesterfirma</span></div><div><strong>Siden 2016</strong><span>Etablert i Bergen</span></div></div>
+</div>
+</div>
+</header>
+
+<div class="facts">
+<div><strong>2016</strong><span>Etablert</span></div>
+<div><strong>Mesterbedrift</strong><span>Faglig kompetanse</span></div>
+<div><strong>Innvendig & utvendig</strong><span>Malerarbeid</span></div>
+<div><strong>Blomsterdalen</strong><span>Bergen</span></div>
+</div>
+
+<section id="tjenester">
+<div class="wrap">
+<div class="section-head">
+<div><div class="k">Tjenester</div><h2>Fra forarbeid til siste strøk.</h2></div>
+<p>Malermester Yngve Haugsbakk AS utfører innvendig og utvendig malerarbeid for boliger og bygg i Bergen-området.</p>
+</div>
+<div class="services">
+<article class="service"><div class="num">01</div><div><h3>Innvendig maling</h3><p>Maling av vegger, tak og andre innvendige flater i bolig og bygg.</p></div></article>
+<article class="service"><div class="num">02</div><div><h3>Utvendig maling</h3><p>Vedlikehold og maling av utvendige flater med riktig forarbeid.</p></div></article>
+<article class="service"><div class="num">03</div><div><h3>Overflatearbeid</h3><p>Klargjøring og behandling av overflater som del av et profesjonelt malerarbeid.</p></div></article>
+</div>
+</div>
+</section>
+
+<section class="master" id="mester">
+<div class="wrap master-grid">
+<div class="master-card">
+<div class="seal">M</div>
+<h3>Registrert mesterbedrift</h3>
+<p>Bedriften er registrert som mesterbedrift hos Mesterbrevnemnda, noe som dokumenterer formell faglig lederkompetanse innen håndverksfaget.</p>
+</div>
+<div class="master-copy">
+<div class="k">Malermester Yngve Haugsbakk AS</div>
+<h2>Ti år med malerarbeid i Bergen.</h2>
+<p>Selskapet ble etablert i 2016 og har bygget opp en stabil virksomhet innen innvendig og utvendig maling.</p>
+<div class="stats"><div class="stat"><strong>10 år</strong><span>Som registrert selskap</span></div><div class="stat"><strong>2,0 MNOK</strong><span>Driftsinntekter 2025</span></div></div>
+</div>
+</div>
+</section>
+
+<section class="projects">
+<div class="project-grid">
+<div class="project-photo"></div>
+<div class="project-copy">
+<div class="k">Profesjonell utførelse</div>
+<h2>Et godt resultat starter under malingen.</h2>
+<p>Godt malerarbeid handler om mer enn fargen på veggen. Riktig forarbeid og fagmessig utførelse gir et penere og mer holdbart resultat.</p>
+<div class="checks">
+<div class="check"><span>Innvendige flater</span><strong>Bolig & bygg</strong></div>
+<div class="check"><span>Utvendige flater</span><strong>Vedlikehold</strong></div>
+<div class="check"><span>Lokalt firma</span><strong>Bergen</strong></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="kontakt">
+<div class="wrap contact-grid">
+<div>
+<div class="k">Kontakt</div>
+<h2>Ta kontakt om ditt prosjekt.</h2>
+<div class="details">
+<div class="detail"><strong>Adresse</strong><span>Skagevegen 61<br>5258 Blomsterdalen</span></div>
+<div class="detail"><strong>Telefon</strong><span><a href="tel:+4792842275">92 84 22 75</a></span></div>
+<div class="detail"><strong>E-post</strong><span><a href="mailto:ynghaug@gmail.com">ynghaug@gmail.com</a></span></div>
+<div class="detail"><strong>Org.nr.</strong><span>916 822 634</span></div>
+</div>
+</div>
+<aside class="box">
+<h3>Ønsker du et tilbud?</h3>
+<p>Send en kort beskrivelse av arbeidet, så kan dere avklare behov, omfang og videre oppfølging direkte.</p>
+<a class="primary" href="mailto:ynghaug@gmail.com">ynghaug@gmail.com</a>
+<a href="tel:+4792842275">92 84 22 75</a>
+</aside>
+</div>
+</section>
+
+<section class="cta">
+<div class="ctain"><h2>Trenger boligen eller bygget et profesjonelt malerarbeid?</h2><a class="btn" href="mailto:ynghaug@gmail.com">Be om tilbud</a></div>
+</section>
+</main>
+
+<footer>
+<div class="foot">
+<div class="brand"><div class="mark">YH</div><div class="bc"><strong>Malermester Yngve Haugsbakk AS</strong><small>Malerarbeid · Bergen</small></div></div>
+<p class="disc">KONSEPTUTKAST — Dette er ikke den offisielle nettsiden til Malermester Yngve Haugsbakk AS. Demoen er laget som et uforpliktende designforslag basert på offentlig tilgjengelig bedriftsinformasjon. Tjenester, bilder og øvrige opplysninger må godkjennes av virksomheten før eventuell publisering. Stemningsbilder er generiske og viser ikke nødvendigvis virksomheten.</p>
+</div>
+</footer>
+</body>
+</html>
